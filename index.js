@@ -33,4 +33,6 @@ function myGetData(getData, times, delay) {
     })
 }
 
+6
+
 myGetData(getData, 5, 1000)

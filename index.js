@@ -19,10 +19,10 @@ function getData() {
 function myGetData(getData, times, delay) {
     return new Promise(function (resolve, reject) {
         function attempt() {
-            getData().then(resolve).catch(function (erro) {
+            getData().then(resolve).catch(function (error) {
                 console.log(`还有 ${times} 次尝试`)
                 if (0 == times) {
-                    reject(erro)
+                    reject(error)
                 } else {
                     times--
                     setTimeout(attempt(), delay)
